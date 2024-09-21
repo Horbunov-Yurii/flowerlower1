@@ -386,5 +386,47 @@
       </address>
       </div>
     </footer>
+    <div class="backdrop">
+      <div class="modal">
+        <h2 class="modal-title">Залиште свої дані, ми вам передзвонимо</h2>
+        <form class="modal-form">
+          <label for="name" class="label-modal">Ім'я</label>
+          <div class="wrapper">
+          <input type="text" id="name" class="input-modal">
+          <svg class="input-icon">
+            <use href="./images/symbol-defs.svg#icon-people-svg"></use>
+          </svg>
+        </div>
+          <label for="tell" class="label-modal">Телефон</label>
+          <div class="wrapper">
+          <input type="tell" id="tell" class="input-modal">
+          <svg class="input-icon">
+            <use href="./images/symbol-defs.svg#icon-phone-svg"></use>
+          </svg>
+          </div>
+          <label for="email" class="label-modal">Пошта</label>
+          <div class="wrapper">
+          <input type="email" id="email" class="input-modal">
+          <svg class="input-icon">
+            <use href="./images/symbol-defs.svg#icon-email-svg"></use>
+          </svg>
+          </div>
+          <label for="text" class="label-comment">Коментар</label>
+          <textarea name="text" id="text" placeholder="Введіть текст" class="text-comment"></textarea>
+          <label class="label-wrapper">
+            <input type="checkbox" name="" id="" class="input-box">
+            <p class="text-checked">Погоджуюся з розсилкою та приймаю</p>
+            <a href="https://www.facebook.com/"  target="_blank" class="link-modal">Умови договору</a>
+          </label>
+          <button type="submit" class="modal-button">Відправити</button>
+        </form>
+        <button type="button" class="button-closee">
+          <svg class="icon-close">
+            <use href="./images/symbol-defs.svg#icon-burger-svg"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/model.js"></script>
   </body>
 </html>
