@@ -47,7 +47,7 @@
         </h1>
 
         <p class="hero-text">З доставкою по Києву протягом 1 години</p>
-        <button type="button" class="hero-button">ЗАМОВИТИ КВІТИ</button>
+        <button type="button" class="hero-button" data-modal-open>ЗАМОВИТИ КВІТИ</button>
         <!-- <img
           src="./images/hero_flower.jpg"
           alt="photo of flowers"
@@ -344,8 +344,8 @@
             </svg>
           <!-- </li> -->
         <!-- </ul> -->
-      </section>
       </div>
+      </section>     
     </main>
 
     <footer class="footer">
@@ -386,27 +386,27 @@
       </address>
       </div>
     </footer>
-    <div class="backdrop">
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <h2 class="modal-title">Залиште свої дані, ми вам передзвонимо</h2>
         <form class="modal-form">
           <label for="name" class="label-modal">Ім'я</label>
           <div class="wrapper">
-          <input type="text" id="name" class="input-modal">
+          <input type="text" id="name" class="input-modal" required>
           <svg class="input-icon">
             <use href="./images/symbol-defs.svg#icon-people-svg"></use>
           </svg>
         </div>
           <label for="tell" class="label-modal">Телефон</label>
           <div class="wrapper">
-          <input type="tell" id="tell" class="input-modal">
+          <input type="tel" id="tell" class="input-modal" required>
           <svg class="input-icon">
             <use href="./images/symbol-defs.svg#icon-phone-svg"></use>
           </svg>
           </div>
           <label for="email" class="label-modal">Пошта</label>
           <div class="wrapper">
-          <input type="email" id="email" class="input-modal">
+          <input type="email" id="email" class="input-modal" required>
           <svg class="input-icon">
             <use href="./images/symbol-defs.svg#icon-email-svg"></use>
           </svg>
@@ -414,13 +414,13 @@
           <label for="text" class="label-comment">Коментар</label>
           <textarea name="text" id="text" placeholder="Введіть текст" class="text-comment"></textarea>
           <label class="label-wrapper">
-            <input type="checkbox" name="" id="" class="input-box">
-            <p class="text-checked">Погоджуюся з розсилкою та приймаю</p>
-            <a href="https://www.facebook.com/"  target="_blank" class="link-modal">Умови договору</a>
+            <input type="checkbox" class="input-box" required>
+            <span class="text-checked">Погоджуюся з розсилкою та приймаю</span>
           </label>
+          <a href="https://www.facebook.com/"  target="_blank" class="link-modal">Умови договору</a>
           <button type="submit" class="modal-button">Відправити</button>
         </form>
-        <button type="button" class="button-closee">
+        <button type="button" class="button-closee" data-modal-close>
           <svg class="icon-close">
             <use href="./images/symbol-defs.svg#icon-burger-svg"></use>
           </svg>

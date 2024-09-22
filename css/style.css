@@ -666,6 +666,12 @@ font-family: "Source Sans 3", sans-serif; */
     width: 100%;
     height: 100%;
     background-color: rgba(100, 0, 0, 0.5);
+    opacity: 1;
+ }
+
+ .is-hidden {
+    opacity: 0;
+    pointer-events: none;
  }
 
  .modal {
@@ -701,6 +707,10 @@ font-family: "Source Sans 3", sans-serif; */
     margin-bottom: 4px;
  }
 
+
+ 
+
+
 .wrapper {
     position: relative;
 }
@@ -711,7 +721,15 @@ font-family: "Source Sans 3", sans-serif; */
     height: 40px;
     border-radius: 4px;
     border: 1px solid rgba(33, 33, 33, 0.20);
+    padding-left: 35px;
+    padding-right: 35px;
  }
+
+ 
+
+
+
+
 
  .input-icon {
     position: absolute;
@@ -719,6 +737,23 @@ font-family: "Source Sans 3", sans-serif; */
     left: 12px;
     width: 18px;
     height: 18px;
+    fill: blue;
+ }
+
+ .input-modal:hover + .input-icon
+ .input-modal:focus + .input-icon {
+ 
+    fill: red;
+ 
+ }
+
+ .input-modal:hover,
+ .input-modal:focus {
+    outline: 1px solid red;
+    border: none;
+    .input-icon {
+        fill: red;
+    }
  }
 
 .label-comment {
@@ -743,6 +778,12 @@ font-family: "Source Sans 3", sans-serif; */
     letter-spacing: 0.12px;
 }
 
+.text-comment:hover,
+.text-comment:focus {
+    outline: 1px solid red;
+    border: none;
+}
+
 .label-wrapper {
     justify-content: center;
     margin-top: 20px;
@@ -755,6 +796,11 @@ font-family: "Source Sans 3", sans-serif; */
     width: 16px;
     height: 15px;
 
+}
+
+.input-box:hover,
+.input-box:focus {
+    outline: 1px solid red;
 }
 
 .text-checked {
@@ -804,7 +850,17 @@ font-family: "Source Sans 3", sans-serif; */
     height: 30px;
     border-radius: 50%;
     border: 1px solid grey;
+    
+}
 
+.button-closee:hover,
+.button-closee:focus {
+    border: none;
+    outline: 1px solid gray;
+    background-color: pink;
+  .icon-close {
+    fill: red;
+  }
 }
 
 .icon-close {
