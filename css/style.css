@@ -725,11 +725,6 @@ font-family: "Source Sans 3", sans-serif; */
     padding-right: 35px;
  }
 
- 
-
-
-
-
 
  .input-icon {
     position: absolute;
@@ -740,21 +735,20 @@ font-family: "Source Sans 3", sans-serif; */
     fill: blue;
  }
 
- .input-modal:hover + .input-icon
- .input-modal:focus + .input-icon {
- 
-    fill: red;
- 
- }
-
  .input-modal:hover,
- .input-modal:focus {
-    outline: 1px solid red;
+.input-modal:focus{
     border: none;
-    .input-icon {
-        fill: red;
-    }
- }
+    outline: 1px solid red;
+}
+
+
+.input-modal:hover + .input-icon,
+.input-modal:focus + .input-icon {
+    fill: red;
+}
+
+
+
 
 .label-comment {
     display: block;
