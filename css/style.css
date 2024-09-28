@@ -366,8 +366,31 @@ text-align: end;
 .details-item:nth-child(2) {
     flex-direction: row-reverse;
 }
+
+.details-img-box {
+    position: relative;
+}
+
 .details-img {
     overflow: hidden;
+}
+
+.details-img-box:hover {
+    .details-img-desc{
+        opacity: 1;
+    }
+}
+
+.details-img-desc {
+    width: 100%;
+    height: 100%;
+    color: white;
+    background-color: rgba(100, 0,0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 50px;
+    opacity: 0;
 }
 
 .details-title {
