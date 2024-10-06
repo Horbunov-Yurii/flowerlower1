@@ -63,6 +63,8 @@ color: var(--additional-accent);
 font-size: 20px;
 font-weight: 400;
 line-height: 1.25;
+background: linear-gradient( #2196F3 0 0) bottom /var(--t, 0 ) 2px no-repeat;
+transition: 0.5s;
 }
 
 
@@ -75,9 +77,12 @@ line-height: 1.25;
     display: block;
     margin-top: 20px;
     opacity: 0;
+    transform: scale(0);
+    transition: transform 1000ms, opacity 100ms;
 }
 .nav-link:hover::after {
     opacity: 1;
+    transform: scale(1);
 }
 
 
@@ -141,7 +146,19 @@ width: 437px;
 background-color: var(--accent-color);
 border-radius: 15px;
 margin-left: 110px;
+opacity: 1;
+transition: transform 1000ms, opacity 1000ms;
 }
+
+
+.hero-button:hover {
+    transform: rotate(360deg);
+    opacity: 0.5; 
+
+    /* transform: translateX(0);
+    opacity: 3; */
+}
+
 
 .hero-description {
 color: var(--text-color);
