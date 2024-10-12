@@ -663,6 +663,22 @@ margin-bottom: 140px;
 
 /* футер */
 
+.footer {
+    padding-top: 40px;
+    padding-bottom: 50px;
+    border-top: 2px solid #A93B59;
+}
+
+.footer-box {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
 
 .footer-link {
     color: var(--additional-accent);
@@ -670,6 +686,26 @@ font-size: 20px;
 font-weight: 400;
 line-height: 1.25;
 font-variant: small-caps;
+transition: color 350ms cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.footer-item:hover  .footer-link:hover {
+    color: #A93B59;
+}
+
+.social-list {
+    display: flex;
+    gap: 46px;
+    align-items: center;
+    margin-top: 32px;
+}
+
+.social-img {
+    transition: transform 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.social-img:hover{
+    transform: scale(1.5) rotate(45deg);
 }
 
 .footer-logo {
@@ -680,8 +716,23 @@ font-size: 24px;
 font-weight: 400;
 line-height: 1.14;
 text-transform: uppercase;
+display: flex;
+flex-direction: column-reverse;
+align-items: center;
 }
 
+.footer-img {
+    width: 88px;
+height: 84px;
+}
+
+.address-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 24px;
+}
 
 .address-link {
     color: var(--text-color);
@@ -721,11 +772,13 @@ font-family: "Source Sans 3", sans-serif; */
     height: 100%;
     background-color: rgba(100, 0, 0, 0.5);
     opacity: 1;
+    transition: opacity 1s cubic-bezier(0.19, 1, 0.22, 1) visibility 1s cubic-bezier(0.55, 0.085, 0.68, 0.53);
  }
 
  .is-hidden {
     opacity: 0;
     pointer-events: none;
+    visibility: hidden;
  }
 
  .modal {
@@ -738,7 +791,12 @@ font-family: "Source Sans 3", sans-serif; */
     border-radius: 4px;
     background: #FFF;
     box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.20);
+    transition: transform 1s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+ }
 
+ .is-hidden .modal {
+    transform: translate(-1000px, -1000px) rotate(70deg) scale(0);
+    transition: transform 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
  }
 
  .modal-title {
