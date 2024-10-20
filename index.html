@@ -10,6 +10,11 @@
       href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Spline+Sans:wght@300..700&display=swap"
       rel="stylesheet"
     />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css" integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/common.css">
@@ -43,7 +48,7 @@
       <section class="hero">
         <div class="container">
         <h1 class="hero-title">
-          <span class="hero-title-1">Неймовірні</span> 
+          <span class="hero-title-1 animate__animated animate__heartBeat">Неймовірні</span> 
           <span class="hero-title-2">Букети</span>
           <span class="hero-title-3">зі свіжих квітів</span>
         </h1>
@@ -86,7 +91,7 @@
       <!-- секція каталог -->
       <section class="catalog">
         <div class="container">
-        <p class="catalog-text" id="catalog">Каталог</p>
+        <p class="catalog-text animate__animated animate__backInDown" id="catalog">Каталог</p>
         <div class="catalog-box">
         <h2 class="catalog-title">Доставка квітів в Києві</h2>
         <ul class="catalog-list">
@@ -134,7 +139,7 @@
         </div>
         <h3 class="catalog-caption">Хіт продажів</h3>
         <ul class="caption-list">
-          <li class="caption-item">
+          <li class="caption-item" data-aos="flip-left">
             <img
               src="./images/flower_katalog_1.jpg"
               alt="flower"
@@ -147,19 +152,19 @@
             <h4 class="caption-subtitle">500 ₴</h4>
             <p class="caption-slogan">Мінібукет 1400-2</p>
           </li>
-          <li class="caption-item">
+          <li class="caption-item" data-aos="flip-up">
             <img
               src="./images/flower_katalog_2.jpg"
               alt="flower"
               class="caption-image"
             />
             <svg class="catalog-heart">
-              <use href="./images/symbol-defs.svg#heart"></use>
+              <use href="./images/symbol-defs.svg#heart" ></use>
             </svg>
             <h4 class="caption-subtitle">800 ₴</h4>
             <p class="caption-slogan">Мінібукет 1600-6</p>
           </li>
-          <li class="caption-item">
+          <li class="caption-item" data-aos="flip-right">
             <img
               src="./images/flower_katalog_3.jpg"
               alt="flower"
@@ -171,7 +176,7 @@
             <h4 class="caption-subtitle">1000 ₴</h4>
             <p class="caption-slogan">Троянда Freedom 51 шт.</p>
           </li>
-          <li class="caption-item">
+          <li class="caption-item" data-aos="flip-left">
             <img
               src="./images/flower_katalog_4.jpg"
               alt="flower"
@@ -183,7 +188,7 @@
             <h4 class="caption-subtitle">680 ₴</h4>
             <p class="caption-slogan">Мінібукет 1400-3</p>
           </li>
-          <li class="caption-item">
+          <li class="caption-item" data-aos="flip-down">
             <img
               src="./images/flower_katalog_5.jpg"
               alt="flower"
@@ -196,7 +201,7 @@
             <h4 class="caption-subtitle">450 ₴</h4>
             <p class="caption-slogan">«Бархатний сезон»</p>
           </li>
-          <li class="caption-item">
+          <li class="caption-item" data-aos="flip-right">
             <img
               src="./images/flower_katalog_6.jpg"
               alt="flower"
@@ -210,13 +215,13 @@
             <p class="caption-slogan">Нобіліс</p>
           </li>
         </ul>
-        <button type="button" class="catalog-btn">Дивитись всі</button>
+        <button type="button" class="catalog-btn" data-aos="zoom-out-down">Дивитись всі</button>
         </div>
       </section>
       <!-- Якість в деталях -->
       <section class="details">
         <div class="container">
-        <p class="details-text" id="about">Якість в деталях</p>
+        <p class="details-text animate__animated animate__rubberBand" id="about">Якість в деталях</p>
         <ul class="details-list">
           <li class="details-item">
             <img src="./images/detailflower1.jpg" alt="flower"  class="details-img"/>
@@ -440,5 +445,9 @@
       </div>
     </div>
     <script src="./js/model.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
