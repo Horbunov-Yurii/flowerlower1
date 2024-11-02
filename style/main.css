@@ -105,8 +105,7 @@ body {
   padding-top: 109px;
   padding-bottom: 50px;
 }
-
-.hero-title-1 {
+.hero__title-1 {
   color: #A93B59;
   font-family: "Playfair Display", serif;
   font-size: 48px;
@@ -115,8 +114,7 @@ body {
   line-height: 1.25; /* 125% */
   display: block;
 }
-
-.hero-title-2 {
+.hero__title-2 {
   color: #F5EBEB;
   font-family: "Playfair Display", serif;
   font-size: 86px;
@@ -133,24 +131,7 @@ body {
   animation-iteration-count: infinite;
   animation-direction: alternate;
 }
-
-@keyframes title {
-  0% {
-    color: #F5EBEB;
-  }
-  50% {
-    color: #B96A7F;
-    font-weight: 900;
-  }
-  75% {
-    color: brown;
-  }
-  100% {
-    color: greenyellow;
-    font-weight: 100;
-  }
-}
-.hero-title-3 {
+.hero__title-3 {
   color: #A93B59;
   font-family: "Playfair Display", serif;
   font-size: 48px;
@@ -159,8 +140,7 @@ body {
   line-height: 1.25;
   margin-bottom: 8px;
 }
-
-.hero-text {
+.hero__text {
   color: #F5EBEB;
   font-size: 24px;
   font-weight: 400;
@@ -169,8 +149,7 @@ body {
   margin-left: 110px;
   margin-bottom: 42px;
 }
-
-.hero-button {
+.hero__button {
   color: #F5EBEB;
   font-size: 24px;
   font-weight: 400;
@@ -183,14 +162,22 @@ body {
   transition: transform 1000ms;
   border: none;
 }
-
-.hero-button:hover {
+.hero__button:hover {
   transform: scale(0.8);
   /* transform: translateX(0);
-  opacity: 3; */
+                    opacity: 3; */
 }
-
-.hero-description {
+.hero__list {
+  display: flex;
+  gap: 124px;
+  justify-content: center;
+}
+.hero__list {
+  display: flex;
+  gap: 124px;
+  justify-content: center;
+}
+.hero__description {
   color: #FFFFFF;
   font-size: 16px;
   font-weight: 400;
@@ -199,25 +186,26 @@ body {
   width: 201px;
   text-align: center;
 }
-
-.hero-description:nth-child(2) {
+.hero__description:nth-child(2) {
   width: 215px;
 }
 
-.hero-list {
-  display: flex;
-  gap: 124px;
-  justify-content: center;
+@keyframes title {
+  0% {
+    color: #F5EBEB;
+  }
+  50% {
+    color: #b96a7f;
+    font-weight: 900;
+  }
+  75% {
+    color: brown;
+  }
+  100% {
+    color: greenyellow;
+    font-weight: 100;
+  }
 }
-
-.hero-img {
-  margin-left: auto;
-  margin-right: auto;
-  width: 40px;
-  height: 40px;
-  margin-bottom: 2px;
-}
-
 .catalog {
   padding-top: 44px;
   padding-bottom: 92px;
