@@ -1,5 +1,5 @@
 .details-text {
-    color: var(--accent-color);
+    color: $accent-color;
     font-family: "Playfair Display", serif;
 font-size: 36px;
 font-weight: 600;
@@ -45,21 +45,21 @@ text-align: end;
 }
 
 .details-title {
-    color:var(--text-color);
+    color: $text-color;
 font-size: 32px;
 font-weight: 400;
 line-height: 1.25;
 margin-bottom: 16px;
 }
 .details-desk {
-    color: var(--additional-accent);
+    color: $additional-accent;
 font-size: 20px;
 font-weight: 300;
 line-height: 1.25;
 width: 527px;
 }
 .details-span {
-    color:var(--text-color);
+    color: $text-color;
 font-size: 20px;
 font-weight: 600;
 line-height: 1.25;

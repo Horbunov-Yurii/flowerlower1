@@ -4,7 +4,7 @@
 }
 
 .hero-title-1{
-    color: var(--accent-color);
+    color: $accent-color;
     font-family: "Playfair Display", serif;
     font-size: 48px;
     font-style: italic;
@@ -14,7 +14,7 @@
 }
 
 .hero-title-2 {
-color: var(--additional-accent);
+color: $additional-accent;
 font-family: "Playfair Display", serif;
 font-size: 86px;
 font-weight: 400;
@@ -32,7 +32,7 @@ animation-direction: alternate;
 }
 @keyframes title {
     0% {
-        color: var(--additional-accent);
+        color: $additional-accent;
     }
     50% {
         color: #B96A7F;
@@ -49,7 +49,7 @@ animation-direction: alternate;
 }
 
 .hero-title-3 {
-color: var(--accent-color);
+color: $accent-color;
 font-family: "Playfair Display", serif;
 font-size: 48px;
 font-style: italic;
@@ -59,7 +59,7 @@ margin-bottom: 8px;
 }
 
 .hero-text {
-color: var(--additional-accent);
+color: $additional-accent;
 font-size: 24px;
 font-weight: 400;
 line-height: 1.25;
@@ -69,13 +69,13 @@ margin-bottom: 42px;
 }
 
 .hero-button {
-color: var(--additional-accent);
+color: $additional-accent;
 font-size: 24px;
 font-weight: 400;
 line-height: 1.25;
 padding: 16px 32px;
 width: 437px;
-background-color: var(--accent-color);
+background-color: $accent-color;
 border-radius: 15px;
 margin-left: 110px;
 transition: transform 1000ms;
@@ -93,7 +93,7 @@ border: none;
 
 
 .hero-description {
-color: var(--text-color);
+color: $text-color;
 font-size: 16px;
 font-weight: 400;
 line-height: 1.25;

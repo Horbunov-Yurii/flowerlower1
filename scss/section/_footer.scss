@@ -16,7 +16,7 @@
 }
 
 .footer-link {
-    color: var(--additional-accent);
+    color: $additional-accent;
 font-size: 20px;
 font-weight: 400;
 line-height: 1.25;
@@ -44,7 +44,7 @@ transition: color 350ms cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
 .footer-logo {
-    color: var(--additional-accent);
+    color: $additional-accent;
 text-align: center;
 font-family: "Spline Sans", sans-serif;
 font-size: 24px;
@@ -71,7 +71,7 @@ fill: white;
 }
 
 .address-link {
-    color: var(--text-color);
+    color: $text-color;
 /* text-align: center; */
 font-size: 24px;
 font-weight: 400;
@@ -80,7 +80,7 @@ text-transform: capitalize;
 }
 
 .address-text {
-    color: var(--text-color);
+    color: $text-color;
 font-size: 20px;
 font-weight: 400;
 line-height: 1.25;
