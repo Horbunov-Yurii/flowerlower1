@@ -4,48 +4,33 @@
 
 
 
+    &__title {
+        color: $accent-color;
+    font-family: "Playfair Display", serif;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 1.33;
+    text-align: end;
+    margin-bottom: 140px;
+    }
+
+
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        
+    }
+
+
+
+
+
 }
 .inviseters>.container {
     position: relative;
     
 }
-
-
-
-.inviseters-title {
-    color: $accent-color;
-font-family: "Playfair Display", serif;
-font-size: 36px;
-font-weight: 600;
-line-height: 1.33;
-text-align: end;
-margin-bottom: 140px;
-}
-
-.inviseters-list {
-    display: flex;
-    justify-content: space-between;
-    
-}
-
-/* .arrow-list {
-    display: flex;
-    justify-content: space-between;
-}
-
-.arrow-item {
-    position: absolute;
-    top: 50%;
-    left: -50px;
-    transform: rotate(180deg);
-} */
-
-
-/* .arrow-item:nth-child(2) {
-    right: 100px;
-    left: 1310px;
-    transform: rotate(360deg);
-} */
 
 
 

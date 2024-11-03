@@ -536,12 +536,7 @@ body {
   padding-top: 121px;
   padding-bottom: 127px;
 }
-
-.inviseters > .container {
-  position: relative;
-}
-
-.inviseters-title {
+.inviseters__title {
   color: #A93B59;
   font-family: "Playfair Display", serif;
   font-size: 36px;
@@ -550,28 +545,15 @@ body {
   text-align: end;
   margin-bottom: 140px;
 }
-
-.inviseters-list {
+.inviseters__list {
   display: flex;
   justify-content: space-between;
 }
 
-/* .arrow-list {
-    display: flex;
-    justify-content: space-between;
+.inviseters > .container {
+  position: relative;
 }
 
-.arrow-item {
-    position: absolute;
-    top: 50%;
-    left: -50px;
-    transform: rotate(180deg);
-} */
-/* .arrow-item:nth-child(2) {
-    right: 100px;
-    left: 1310px;
-    transform: rotate(360deg);
-} */
 .arrow-icon-left {
   fill: #B02E51;
   width: 69px;
