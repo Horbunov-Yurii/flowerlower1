@@ -1,66 +1,73 @@
-.details-text {
-    color: $accent-color;
-    font-family: "Playfair Display", serif;
-font-size: 36px;
-font-weight: 600;
-line-height: 1.33;
-margin-bottom: 171px;
-text-align: end;
-}
+.details {
+    &__text {
+        color: $accent-color;
+        font-family: "Playfair Display", serif;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 1.33;
+    margin-bottom: 171px;
+    text-align: end;
+    }
 
-.details-item {
-    display: flex;
-    gap: 121px;
-    align-items: center;
-}
+    &__item {
+        display: flex;
+        gap: 121px;
+        align-items: center;
+        
+        &:nth-child(2) {
+            flex-direction: row-reverse;
+        }
+    }
+     
+    &__img {
+        overflow: hidden;
+    }
 
-.details-item:nth-child(2) {
-    flex-direction: row-reverse;
-}
+    &__wrapper {
+        position: relative;
+        
+        
+        &:hover {
+            .details-img-desc{
+                opacity: 1;
+            }
+        }
+    }
 
-.details-img-box {
-    position: relative;
-}
+    &__subdesc {
+        width: 100%;
+        height: 100%;
+        color: white;
+        background-color: rgba(100, 0,0, 0.5);
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 50px;
+        opacity: 0;
+    }
 
-.details-img {
-    overflow: hidden;
-}
+    &__title {
+        color: $text-color;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 1.25;
+    margin-bottom: 16px;
+    }
 
-.details-img-box:hover {
-    .details-img-desc{
-        opacity: 1;
+    &__desk {
+        color: $additional-accent;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.25;
+    width: 527px;
+    }
+
+    &__span {
+        color: $text-color;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.25;
     }
 }
 
-.details-img-desc {
-    width: 100%;
-    height: 100%;
-    color: white;
-    background-color: rgba(100, 0,0, 0.5);
-    position: absolute;
-    top: 0;
-    left: 0;
-    padding: 50px;
-    opacity: 0;
-}
 
-.details-title {
-    color: $text-color;
-font-size: 32px;
-font-weight: 400;
-line-height: 1.25;
-margin-bottom: 16px;
-}
-.details-desk {
-    color: $additional-accent;
-font-size: 20px;
-font-weight: 300;
-line-height: 1.25;
-width: 527px;
-}
-.details-span {
-    color: $text-color;
-font-size: 20px;
-font-weight: 600;
-line-height: 1.25;
-}
