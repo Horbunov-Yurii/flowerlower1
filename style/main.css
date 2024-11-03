@@ -406,14 +406,7 @@ body {
   padding-top: 132px;
   padding-bottom: 121px;
 }
-
-.forms-wrap {
-  background-color: rgba(185, 106, 127, 0.7);
-  display: flex;
-  gap: 242px;
-}
-
-.forms-title {
+.forms__title {
   color: #A93B59;
   /* text-align: center; */
   font-family: "Playfair Display", serif;
@@ -422,12 +415,15 @@ body {
   line-height: 1.33;
   margin-bottom: 140px;
 }
-
-.form {
+.forms__wrap {
+  background-color: rgba(185, 106, 127, 0.7);
+  display: flex;
+  gap: 242px;
+}
+.forms__packing {
   padding: 36px 64px 86px 55px;
 }
-
-.forms-text {
+.forms__text {
   color: #F5EBEB;
   font-size: 32px;
   font-weight: 400;
@@ -435,56 +431,18 @@ body {
   width: 347px;
   margin-bottom: 40px;
 }
-
-.forms-link {
-  width: 45px;
-  height: 45px;
-  border: 1px solid #6F6567;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  top: 20%;
-  right: 39px;
-}
-
-.forms-link:hover,
-.forms-link:focus {
-  background-color: aqua;
-  border: none;
-  outline: 1px solid #e1ff00;
-}
-.forms-link:hover .form-icon,
-.forms-link:focus .form-icon {
-  fill: red;
-}
-
-.form-icon {
-  width: 28px;
-  height: 28px;
-  flex-shrink: 0;
-  fill: #6F6567;
-}
-
-.form-icon:hover {
-  fill: #822740;
-}
-
-.forms-span {
+.forms__span {
   color: #FFFFFF;
   font-size: 32px;
   font-weight: 600;
   line-height: 1.25;
 }
-
-.forms-box {
+.forms__box {
   position: relative;
   margin-bottom: 40px;
 }
-
-.form-input {
-  color: #8D8D8D;
+.forms__input {
+  color: #8d8d8d;
   font-size: 20px;
   font-weight: 700;
   line-height: 1.25;
@@ -495,8 +453,36 @@ body {
   border: none;
   padding-left: 38px;
 }
-
-.form-button {
+.forms__link {
+  width: 45px;
+  height: 45px;
+  border: 1px solid #6f6567;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 20%;
+  right: 39px;
+}
+.forms__link:hover, .forms__link:focus {
+  background-color: aqua;
+  border: none;
+  outline: 1px solid #e1ff00;
+}
+.forms__link:hover .form-icon, .forms__link:focus .form-icon {
+  fill: red;
+}
+.forms__icon {
+  width: 28px;
+  height: 28px;
+  flex-shrink: 0;
+  fill: #6f6567;
+}
+.forms__icon:hover {
+  fill: #822740;
+}
+.forms__button {
   color: #FFFFFF;
   font-size: 24px;
   font-weight: 400;
@@ -506,47 +492,40 @@ body {
   height: 62px;
   border-radius: 15px;
   box-shadow: 142px 0px 40px 0px rgba(0, 0, 0, 0), 91px 0px 36px 0px rgba(0, 0, 0, 0.01), 51px 0px 31px 0px rgba(0, 0, 0, 0.05), 23px 0px 23px 0px rgba(0, 0, 0, 0.09), 6px 0px 12px 0px rgba(0, 0, 0, 0.1), 0px 0px 0px 0px rgba(0, 0, 0, 0.1);
-  background-color: #A93B59;
+  background-color: #a93b59;
   border: none;
 }
-
-.forms-caption {
-  color: #FFF;
-  /* text-align: center; */
+.forms__caption {
+  color: #fff;
   font-size: 32px;
   font-weight: 400;
   line-height: 1.25;
   margin-bottom: 39px;
   margin-top: 40px;
 }
-
-.forms-list {
+.forms__list {
   display: flex;
   flex-direction: column;
   gap: 28px;
 }
-
-.forms-item {
+.forms__item {
   display: flex;
   align-items: center;
   gap: 32px;
 }
-
-.form-check {
+.forms__check {
   width: 48px;
   height: 48px;
   fill: #822740;
 }
-
-.forms-desk {
+.forms__desk {
   width: 389px;
   color: rgba(255, 255, 255, 0.71);
   font-size: 20px;
   font-weight: 400;
   line-height: 1.25;
 }
-
-.forms-bold {
+.forms__bold {
   color: rgba(255, 255, 255, 0.71);
   font-size: 20px;
   font-weight: 700;
