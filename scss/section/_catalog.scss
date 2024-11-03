@@ -1,171 +1,178 @@
+
 .catalog {
     padding-top: 44px;
     padding-bottom: 92px;
     text-align: center;
+
+    &__text {
+        color: $accent-color;
+        font-family: "Playfair Display", serif;
+        font-size: 36px;
+        font-weight: 600;
+        line-height: 1.33;
+        text-align: start;
+        }
+
+        &__box {
+            width: 1085px;
+            background-color: $accent-color;
+            margin: 0 auto;
+            border-radius: 15px;
+        }
+
+        &__title {
+            color: $text-color;
+        text-align: center;
+        font-family: "Playfair Display", serif;
+        font-size: 36px;
+        font-weight: 600;
+        line-height: 1.33;
+        margin-bottom: 20px;
+        }
+
+        &__list {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            background-color: #B96A7F;
+            padding: 22px 0 22px 0;
+            border-radius: 15px;
+        }
+
+        &__item {
+            display: flex;
+
+            &:nth-child(1) .catalog__desc {
+                margin-right: 74px;
+            }
+
+            &:nth-child(2) .catalog__desc {
+                margin-right: 157px;
+            }
+            &:nth-child(3) .catalog__desc {
+                margin-right: 70px;
+            }
+            &:nth-child(4) .catalog__desc {
+                margin-right: 148px;
+            }
+            
+            &:nth-child(5) .catalog__desc {
+                margin-right: 63px;
+            }
+        }
+
+        &__desc {
+            color: $text-color;
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 1.27;
+        }
+
+        &__button {
+            background-color: transparent;
+            border: none;
+        }
+
+        &__icon {
+            fill: #FFFFFF;
+            
+            &:hover {
+                fill: #000;
+            }
+        }
+        
+        &__caption {
+            color: $text-color;
+        text-align: center;
+        font-family: "Playfair Display", serif;
+        font-size: 36px;
+        font-weight: 600;
+        line-height: 1.33;
+        margin-top: 50px;
+        margin-bottom: 20px;
+        }
+
+        &__btn {
+            color: $text-color;
+        font-weight: 400;
+        line-height: 1.25; 
+        letter-spacing: 1.6px;
+        text-transform: uppercase;
+        margin-top: 20px;
+        background-color: transparent;
+         border-radius: 15px;
+        border: 1px solid #FFF; ;
+        padding: 15px 30px;
+        
+        }
 }
 
-.catalog-text {
-color: $accent-color;
-font-family: "Playfair Display", serif;
-font-size: 36px;
-font-weight: 600;
-line-height: 1.33;
-text-align: start;
-}
 
-.catalog-box {
-    width: 1085px;
-    background-color: $accent-color;
-    margin: 0 auto;
-    border-radius: 15px;
-}
+.caption {
+    &__list {
+        display: flex;
+        gap: 75px;
+        flex-wrap: wrap;
+        justify-content: center;
+        row-gap: 30px;
+       
+    }
 
-.catalog-title {
-    color: $text-color;
-text-align: center;
-font-family: "Playfair Display", serif;
-font-size: 36px;
-font-weight: 600;
-line-height: 1.33;
-margin-bottom: 20px;
+    &__item {
+        border-radius: 15px;
+        background: #FFF;
+        padding: 15px;
+        position: relative;
+    }
 
+    &__heart {
+        width: 28px;
+        height: 28px;
+        fill: #B02E51;
+       position: absolute;
+       top: 14px;
+       right: 15px;
+    }
 
+    &__desk {
+        color: $text-color;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.26;
+    letter-spacing: 0.75px;
+    text-transform: uppercase;
+    }
 
+    &__subtitle {
+        color: $background-color;
+        font-size: 34px;
+        font-weight: 300;
+        line-height: 1.17;
+        text-align: center;
+    }
 
-}
-
-.catalog-list {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    background-color: #B96A7F;
-    padding: 22px 0 22px 0;
-    border-radius: 15px;
-}
-
-.catalog-item {
-    display: flex;
-}
-
-
-.catalog-desc {
-    color: $text-color;
-font-size: 18px;
-font-weight: 300;
-line-height: 1.27;
-}
-
-.catalog-button {
-    background-color: transparent;
-    border: none;
-}
-
-.catalog-icon {
-    fill: #FFFFFF;
-}
-
-.catalog-icon:hover {
-    fill: #000;
-}
-
-.catalog-item:nth-child(1) .catalog-desc {
-    margin-right: 74px;
-}
-
-.catalog-item:nth-child(2) .catalog-desc {
-    margin-right: 157px;
-}
-
-.catalog-item:nth-child(3) .catalog-desc {
-    margin-right: 70px;
-}
-
-.catalog-item:nth-child(4) .catalog-desc {
-    margin-right: 148px;
-}
-
-.catalog-item:nth-child(5) .catalog-desc {
-    margin-right: 63px;
-}
-
-/* .catalog-desc:nth-child(2) {
-    margi
-} */
-
-
-
-.catalog-heart {
-    width: 28px;
-    height: 28px;
-    fill: #B02E51;
-   position: absolute;
-   top: 14px;
-   right: 15px;
-}
-
-.catalog-caption {
-    color: $text-color;
-text-align: center;
-font-family: "Playfair Display", serif;
-font-size: 36px;
-font-weight: 600;
-line-height: 1.33;
-margin-top: 50px;
-margin-bottom: 20px;
-}
-
-.caption-list {
-    display: flex;
-    gap: 75px;
-    flex-wrap: wrap;
-    justify-content: center;
-    row-gap: 30px;
-   
-}
-
-.caption-item {
-    border-radius: 15px;
-    background: #FFF;
-    padding: 15px;
-    position: relative;
-}
-
-.caption-desk {
-    color: $text-color;
-font-size: 15px;
-font-weight: 600;
-line-height: 1.26;
-letter-spacing: 0.75px;
-text-transform: uppercase;
-}
-
-.caption-subtitle {
-    color: $background-color;
-    font-size: 34px;
+    &__slogan {
+        color: $background-color;
+    font-size: 16px;
     font-weight: 300;
-    line-height: 1.17;
+    line-height: 1.25;
     text-align: center;
+    margin-top: 10px;
+    }
 }
 
-.caption-slogan {
-    color: $background-color;
-font-size: 16px;
-font-weight: 300;
-line-height: 1.25;
-text-align: center;
-margin-top: 10px;
-}
 
-.catalog-btn {
-    color: $text-color;
-font-weight: 400;
-line-height: 1.25; 
-letter-spacing: 1.6px;
-text-transform: uppercase;
-margin-top: 20px;
-background-color: transparent;
- border-radius: 15px;
-border: 1px solid #FFF; ;
-padding: 15px 30px;
 
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
