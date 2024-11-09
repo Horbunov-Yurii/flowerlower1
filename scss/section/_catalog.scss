@@ -110,10 +110,11 @@
 
 .caption {
     &__list {
-        display: flex;
+        // display: flex;
         gap: 75px;
-        flex-wrap: wrap;
-        justify-content: center;
+        // flex-wrap: wrap;
+        // justify-content: center;
+        @include flex-box($align:flex-start);
         row-gap: 30px;
        
     }

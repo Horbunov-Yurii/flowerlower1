@@ -51,9 +51,10 @@ font-size: 24px;
 font-weight: 400;
 line-height: 1.14;
 text-transform: uppercase;
-display: flex;
-flex-direction: column-reverse;
-align-items: center;
+// display: flex;
+// flex-direction: column-reverse;
+// align-items: center;
+@include flex-box ($directon:column-reverse,$justify:flex-start,$wrap:nowrap)
 }
 
 .footer-img {
@@ -63,9 +64,10 @@ fill: white;
 }
 
 .address-list {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
+    @include flex-box($justify:flex-start,$direction:column);
     text-align: center;
     gap: 24px;
 }

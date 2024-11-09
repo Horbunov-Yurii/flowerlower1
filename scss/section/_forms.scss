@@ -61,9 +61,10 @@
     height: 45px;
     border: 1px solid #6f6567;
     border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    @include flex-box($wrap:nowrap);
     position: absolute;
     top: 20%;
     right: 39px;

@@ -72,15 +72,17 @@
   }
 
   &__list {
-    display: flex;
+    // display: flex;
     gap: 124px;
-    justify-content: center;
+    // justify-content: center;
+    @include flex-box($align:start,$wrap:nowrap);
   }
 
   &__list {
-    display: flex;
+    // display: flex;
     gap: 124px;
-    justify-content: center;
+    // justify-content: center;
+    @include flex-box($align:start,$wrap:nowrap);
   }
 
   &__description {
