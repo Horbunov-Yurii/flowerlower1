@@ -115,18 +115,18 @@ body {
 .hero__title-1 {
   color: #A93B59;
   font-family: "Playfair Display", serif;
-  font-size: 48px;
   font-style: italic;
+  font-size: 48px;
   font-weight: 500;
-  line-height: 1.25; /* 125% */
+  line-height: 1.25;
   display: block;
 }
 .hero__title-2 {
   color: #F5EBEB;
   font-family: "Playfair Display", serif;
+  /* якщо виникнуть проблеми -- перерахуй lineheight */
   font-size: 86px;
   font-weight: 400;
-  /* якщо виникнуть проблеми -- перерахуй lineheight */
   line-height: 1.2;
   text-transform: uppercase;
   margin-left: 110px;
@@ -141,8 +141,8 @@ body {
 .hero__title-3 {
   color: #A93B59;
   font-family: "Playfair Display", serif;
-  font-size: 48px;
   font-style: italic;
+  font-size: 48px;
   font-weight: 500;
   line-height: 1.25;
   margin-bottom: 8px;
@@ -158,7 +158,7 @@ body {
 }
 .hero__button {
   color: #F5EBEB;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 400;
   line-height: 1.25;
   padding: 16px 32px;
@@ -301,6 +301,7 @@ body {
 }
 .catalog__btn {
   color: #FFFFFF;
+  font-size: 20px;
   font-weight: 400;
   line-height: 1.25;
   letter-spacing: 1.6px;
@@ -593,7 +594,7 @@ body {
 .footer {
   padding-top: 40px;
   padding-bottom: 50px;
-  border-top: 2px solid #A93B59;
+  border-top: 2px solid #a93b59;
 }
 
 .footer-box {
@@ -617,7 +618,7 @@ body {
 }
 
 .footer-item:hover .footer-link:hover {
-  color: #A93B59;
+  color: #a93b59;
 }
 
 .social-list {
@@ -644,10 +645,8 @@ body {
   line-height: 1.14;
   text-transform: uppercase;
   display: flex;
-  justify-content: center;
+  flex-direction: column-reverse;
   align-items: center;
-  flex-wrap: wrap;
-  flex-direction: row;
 }
 
 .footer-img {
@@ -658,8 +657,10 @@ body {
 
 .address-list {
   display: flex;
-  flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
   text-align: center;
   gap: 24px;
 }
@@ -805,10 +806,12 @@ body {
 }
 
 .label-wrapper {
-  justify-content: center;
   margin-top: 20px;
   display: flex;
+  justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
   gap: 8px;
 }
 

@@ -7,9 +7,7 @@
     &__text {
         color: $accent-color;
         font-family: "Playfair Display", serif;
-        font-size: 36px;
-        font-weight: 600;
-        line-height: 1.33;
+        @include fonts ($sise: 36px, $weight: 600, $height: 1.33);
         text-align: start;
         }
 
@@ -24,9 +22,7 @@
             color: $text-color;
         text-align: center;
         font-family: "Playfair Display", serif;
-        font-size: 36px;
-        font-weight: 600;
-        line-height: 1.33;
+        @include fonts ($sise: 36px, $weight: 600, $height: 1.33);
         margin-bottom: 20px;
         }
 
@@ -63,9 +59,7 @@
 
         &__desc {
             color: $text-color;
-        font-size: 18px;
-        font-weight: 300;
-        line-height: 1.27;
+        @include fonts ($sise: 18px, $weight: 300, $height: 1.27);
         }
 
         &__button {
@@ -85,17 +79,14 @@
             color: $text-color;
         text-align: center;
         font-family: "Playfair Display", serif;
-        font-size: 36px;
-        font-weight: 600;
-        line-height: 1.33;
+        @include fonts ($sise: 36px, $weight: 600, $height: 1.33);
         margin-top: 50px;
         margin-bottom: 20px;
         }
 
         &__btn {
-            color: $text-color;
-        font-weight: 400;
-        line-height: 1.25; 
+            color: $text-color; 
+        @include fonts ();
         letter-spacing: 1.6px;
         text-transform: uppercase;
         margin-top: 20px;
@@ -110,10 +101,7 @@
 
 .caption {
     &__list {
-        // display: flex;
         gap: 75px;
-        // flex-wrap: wrap;
-        // justify-content: center;
         @include flex-box($align:flex-start);
         row-gap: 30px;
        
@@ -137,42 +125,24 @@
 
     &__desk {
         color: $text-color;
-    font-size: 15px;
-    font-weight: 600;
-    line-height: 1.26;
+    @include fonts ($sise: 15px, $weight: 600, $height: 1.26);
     letter-spacing: 0.75px;
     text-transform: uppercase;
     }
 
     &__subtitle {
         color: $background-color;
-        font-size: 34px;
-        font-weight: 300;
-        line-height: 1.17;
+        @include fonts ($sise: 34px, $weight: 300, $height: 1.17);
         text-align: center;
     }
 
     &__slogan {
         color: $background-color;
-    font-size: 16px;
-    font-weight: 300;
-    line-height: 1.25;
+    @include fonts ($sise: 16px, $weight: 300);
     text-align: center;
     margin-top: 10px;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

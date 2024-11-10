@@ -5,20 +5,22 @@
   &__title-1 {
     color: $accent-color;
     font-family: "Playfair Display", serif;
-    font-size: 48px;
+    // font-size: 48px;
     font-style: italic;
-    font-weight: 500;
-    line-height: 1.25; /* 125% */
+    // font-weight: 500;
+    // line-height: 1.25; /* 125% */
+    @include fonts($sise: 48px, $weight: 500);
     display: block;
   }
 
   &__title-2 {
     color: $additional-accent;
     font-family: "Playfair Display", serif;
-    font-size: 86px;
-    font-weight: 400;
+    // font-size: 86px;
+    // font-weight: 400;
     /* якщо виникнуть проблеми -- перерахуй lineheight */
-    line-height: 1.2;
+    // line-height: 1.2;
+    @include fonts($sise: 86px, $height: 1.2); 
     text-transform: uppercase;
     margin-left: 110px;
     margin-right: 24px;
@@ -33,18 +35,20 @@
   &__title-3 {
     color: $accent-color;
     font-family: "Playfair Display", serif;
-    font-size: 48px;
+    // font-size: 48px;
     font-style: italic;
-    font-weight: 500;
-    line-height: 1.25;
+    // font-weight: 500;
+    // line-height: 1.25;
+    @include fonts($sise: 48px, $weight: 500); 
     margin-bottom: 8px;
   }
 
   &__text {
     color: $additional-accent;
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 1.25;
+    // font-size: 24px;
+    // font-weight: 400;
+    // line-height: 1.25;
+    @include fonts($sise: 24px);
     text-transform: capitalize;
     margin-left: 110px;
     margin-bottom: 42px;
@@ -52,9 +56,10 @@
 
   &__button {
     color: $additional-accent;
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 1.25;
+    // font-size: 24px;
+    // font-weight: 400;
+    // line-height: 1.25;
+    @include fonts();
     padding: 16px 32px;
     width: 437px;
     background-color: $accent-color;
@@ -87,9 +92,10 @@
 
   &__description {
     color: $text-color;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1.25;
+    // font-size: 16px;
+    // font-weight: 400;
+    // line-height: 1.25;
+    @include fonts($sise: 16px);
     text-transform: uppercase;
     width: 201px;
     text-align: center;

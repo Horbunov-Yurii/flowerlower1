@@ -1,7 +1,22 @@
-@mixin flex-box($justify:center,$align:center,$wrap:wrap,$direction:row){
+@mixin flex-box($justify:center, $align:center, $wrap:wrap, $direction:row){
     display: flex;
     justify-content: $justify;
     align-items: $align;
     flex-wrap: $wrap;
     flex-direction: $direction;
 }
+
+@mixin fonts($sise: 20px, $weight:400, $height:1.25) {
+    font-size: $sise;
+    font-weight: $weight;
+    line-height: $height;
+}
+
+
+// @mixin colum($justify:center, $align:center, $wrap:wrap, $direction:row){
+//     display: flex;
+//     justify-content: $justify;
+//     align-items: $align;
+//     flex-wrap: $wrap;
+//     flex-direction: $direction;
+// }

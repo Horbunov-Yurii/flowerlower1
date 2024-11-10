@@ -45,9 +45,10 @@
 
 &__ref {
     color: $additional-accent;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 1.25;
+    // font-size: 20px;
+    // font-weight: 400;
+    // line-height: 1.25;
+    @include fonts();
     background: linear-gradient( #2196F3 0 0) bottom /var(--t, 0 ) 2px no-repeat;
     transition: 0.5s;
     }
